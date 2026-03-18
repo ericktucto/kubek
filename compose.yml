@@ -1,0 +1,11 @@
+services:
+  kubek:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 8982:3000
+      - 8383:25565
+    volumes:
+      - ./servers:/app/servers
+      - ./logs:/app/logs
+      - ./binaries:/app/binaries
