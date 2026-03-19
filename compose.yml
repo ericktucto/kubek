@@ -1,6 +1,6 @@
 services:
   kubek:
-    build: ghcr.io/ericktucto/kubek:latest
+    image: ghcr.io/ericktucto/kubek:latest
     restart: unless-stopped
     ports:
       - "${PORT_DASHBOARD:-3000}:3000"
