@@ -26,7 +26,3 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository }}:latest
-
-  #deploy-image:
-  #  needs: create-image
-  #  runs-on: ubuntu-latest

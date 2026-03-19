@@ -1,10 +1,10 @@
 services:
   kubek:
-    build: .
+    build: ghcr.io/ericktucto/kubek:latest
     restart: unless-stopped
     ports:
-      - 8982:3000
-      - 8383:25565
+      - "${PORT_DASHBOARD:-3000}:3000"
+      - "${PORT_MINECRAFT:-25565}:25565"
     volumes:
       - ./servers:/app/servers
       - ./logs:/app/logs
