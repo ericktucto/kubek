@@ -21,7 +21,7 @@ A Docker-based Minecraft server management dashboard built on top of [Kubek](htt
 
 ```bash
 # Clone this repository
-git clone https://github.com/ericktcto/kubek.git
+git clone https://github.com/ericktucto/kubek.git
 cd kubek
 
 # Copy environment file
